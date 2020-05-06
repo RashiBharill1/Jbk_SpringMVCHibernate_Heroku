@@ -88,11 +88,12 @@ public class AdminDAOImpl implements AdminDAO {
 
 	@Override
 	public List<StateAdmin> loadState() {
-	        return getCurrentSession().createQuery("from StateAdmin sa").list();
+	        return getCurrentSession().createQuery("from StateAdmin").list();
 	    }
 	
 	public String getState(int sid){
-		return getCurrentSession().createQuery("sa.state from StateAdmin sa where sa.sid=:sid").toString();
+		Query query = getCurrentSession().createQuery(" select sa.state from StateAdmin sa where sa.sid="+sid);
+		return query.list().get(0).toString();
 	}
 
 }
