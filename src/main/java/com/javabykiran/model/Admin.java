@@ -138,14 +138,14 @@ public class Admin {
 	 this.stateAdmin = stateAdmin;
 	}*/
 
-/*	public String getState() {
+	public String getState() {
 		return state;
 	}
 
 	public void setState(String state) {
-		this.state = getStateAdmin().getState();
+		this.state = state;
 	}
-*/
+
 	@Override
 	public String toString() {
 		return "Admin [id=" + id + ", username=" + username + ", email=" + email + ", mobileNumber=" + mobileNumber

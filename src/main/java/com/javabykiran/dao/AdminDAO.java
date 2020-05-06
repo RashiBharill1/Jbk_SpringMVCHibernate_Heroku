@@ -21,5 +21,6 @@ public interface AdminDAO {
 	public Admin getAdmin(int theId);
 	
 	 public List<StateAdmin> loadState();
-
+    
+	 public String getState(int sid);
 }
