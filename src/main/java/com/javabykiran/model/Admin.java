@@ -43,7 +43,7 @@ public class Admin {
 	private String isDefault;
 	 
 
-	/*@ManyToOne
+/*	@ManyToOne
 	@JoinColumn(name="sid")
 	private StateAdmin stateAdmin;*/
 	
@@ -129,28 +129,28 @@ public class Admin {
 	public void setSid(int sid) {
 		this.sid = sid;
 	}
-
+	/*@ManyToOne
 	public StateAdmin getStateAdmin() {
 		return stateAdmin;
 	}
 
 	public void setStateAdmin(StateAdmin stateAdmin) {
-		this.stateAdmin = stateAdmin;
-	}
+	 this.stateAdmin = stateAdmin;
+	}*/
 
-	public String getState() {
+/*	public String getState() {
 		return state;
 	}
 
 	public void setState(String state) {
 		this.state = getStateAdmin().getState();
 	}
-
+*/
 	@Override
 	public String toString() {
 		return "Admin [id=" + id + ", username=" + username + ", email=" + email + ", mobileNumber=" + mobileNumber
 				+ ", gender=" + gender + ", course=" + course + ", password=" + password
-				+ ", isDefault=" + isDefault + ", sid=" + sid + ", state=" + state +"]";
+				+ ", isDefault=" + isDefault + ", sid=" + sid + "]";
 	}
 
 

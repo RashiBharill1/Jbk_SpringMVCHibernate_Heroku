@@ -18,7 +18,7 @@ public class StateAdmin {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "sid")
+	@Column(name = "sid", insertable = false, updatable = false)
 	private int sid;
 
 	@Column(name = "state")
